@@ -65,7 +65,7 @@
 | 분류                 | 기술                        |
 | -------------------- | --------------------------- |
 | Language / Framework | Java 17, Spring Boot 3.4.3  |
-| Build                | Gradle (멀티 모듈)          |
+| Build                | Gradle (멀티 모듈)           |
 | Security             | Spring Security + JWT       |
 | Database             | JPA + MySQL                 |
 | File Storage         | AWS S3                      |
@@ -89,7 +89,7 @@
 ```
                         ┌─────────────────────────────────┐
                         │            GitLab               │
-                        │  (소스 코드 / MR 트리거)          │
+                        │  (소스 코드 / MR 트리거)         │
                         └────────────┬────────────────────┘
                                      │ Webhook
                                      ▼
@@ -100,19 +100,19 @@
                         └────────────┬───────────┘
                                      │ image push
                     ┌────────────────▼──────────────────┐
-                    │           Docker Hub               │
+                    │           Docker Hub              │
                     └────────────────┬──────────────────┘
                                      │ GitOps update
                     ┌────────────────▼──────────────────┐
-                    │           Kubernetes               │
+                    │           Kubernetes              │
                     │  ┌──────────────┐  ┌───────────┐  │
                     │  │  API Server  │  │ API Docs  │  │
                     │  │ Spring Boot  │  │   Nginx   │  │
                     │  └──────┬───────┘  └───────────┘  │
-                    │         │                          │
-                    │  ┌──────▼───────┐                  │
-                    │  │    MySQL     │                  │
-                    │  └──────────────┘                  │
+                    │         │                         │
+                    │  ┌──────▼───────┐                 │
+                    │  │    MySQL     │                 │
+                    │  └──────────────┘                 │
                     └───────────────────────────────────┘
 
  User ──── HTTPS ──── React SPA (Vite) ──── /api proxy ──── API Server
@@ -180,9 +180,9 @@ cd backend
 
 | 이름 | 역할           |
 | ---- | -------------- |
-|      | 팀장 / Backend |
-|      | Backend        |
-|      | Backend        |
-|      | Frontend       |
-|      | Frontend       |
-|      | Frontend       |
+|   김덕윤   | 팀장 / Backend |
+|   채용수   | Backend        |
+|   이효미   | Backend        |
+|   최재영   | Backend       |
+|   이성욱   | Frontend       |
+|   전준표   | Frontend       |
